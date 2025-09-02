@@ -32,20 +32,20 @@ def bfs(graph, start):
     queue = [start]  
 
     while queue:
-        node = queue.pop(0)  # Get the first node from the queue
+        node = queue.pop(0)  
         if node not in visited:
-            visited.append(node)  # Mark the node as visited
-            queue.extend(graph.get(node, []))  # Add neighbors to the queue
+            visited.append(node)  
+            queue.extend(graph.get(node, []))  
 
     return visited
 
 graph = {}
-n = int(input("Enter number of nodes: "))  # Get number of nodes
+n = int(input("Enter number of nodes: "))  
 
 for _ in range(n):
     node = input("Enter node: ")
     neighbors = input(f"Enter neighbors of {node} (comma separated): ").split(",")
-    graph[node] = [neighbor.strip() for neighbor in neighbors]  # Store neighbors
+    graph[node] = [neighbor.strip() for neighbor in neighbors]  
 
 start_node = input("Enter the starting node for BFS: ")
 
