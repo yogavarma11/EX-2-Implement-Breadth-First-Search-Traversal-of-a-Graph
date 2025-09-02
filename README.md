@@ -67,6 +67,4 @@ Enter the starting node for BFS: A
 
 BFS Traversal Order: ['A', 'B', 'C']
 
-Sample Output:
 
-BFS Traversal Order: ['A', 'B', 'C']
