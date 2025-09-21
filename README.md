@@ -1,8 +1,8 @@
 # EX-2: Implement-Breadth-First-Search-Traversal-of-a-Graph
 
-**Name:**
+**Name:YOGAVARMA B**
 
-**Register Number:**
+**Register Number:2305002029**
 
 ### Aim:
 To Implement Breadth First Search Traversal of a Graph using Python 3.
@@ -53,34 +53,40 @@ n = int(input("Enter number of nodes: "))
 for _ in range(n):
     node = input("Enter node: ")
     neighbors = input(f"Enter neighbors of {node} (comma separated): ").split(",")
-    graph[node] = [neighbor.strip() for neighbor in neighbors]  
+    graph[node] = [neighbor.strip() for neighbor in neighbors if neighbor.strip()]  
 
 start_node = input("Enter the starting node for BFS: ")
 
-
 print("BFS Traversal Order:", bfs(graph, start_node))
+
 ```
 ### Sample Input:
 
-Enter number of nodes: 3
+
+Enter number of nodes: 5
 
 Enter node: A
-
-Enter neighbors of A (comma separated): B
+Enter neighbors of A (comma separated): B,C
 
 Enter node: B
-
-Enter neighbors of B (comma separated): C
+Enter neighbors of B (comma separated): A,D,E
 
 Enter node: C
+Enter neighbors of C (comma separated): A,E
 
-Enter neighbors of C (comma separated): 
+Enter node: D
+Enter neighbors of D (comma separated): B,E
+
+Enter node: E
+Enter neighbors of E (comma separated): B,C,D
 
 Enter the starting node for BFS: A
 
 ### Sample Output:
 
-BFS Traversal Order: ['A', 'B', 'C']
+BFS Traversal Order: ['A', 'B', 'C', 'D', 'E']
+<img width="701" height="461" alt="{BE471BDC-1A9F-4C05-A4B9-FAAC263B8AAB}" src="https://github.com/user-attachments/assets/16771d9d-67da-4ec2-9a70-a9d894dd6494" />
 
 
 ### Result:
+Thus, the Breadth First Search Traversal of a Graph has been successfully implemented and executed using Python 3
